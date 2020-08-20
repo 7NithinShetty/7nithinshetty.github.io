@@ -1,0 +1,264 @@
+/* -------------------------------------------------------------------------------------------------------------- */
+/*                                             Home Page Area Starts                                              */
+/* -------------------------------------------------------------------------------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* ------------------------------------------------------------- */
+/*                        Nav-bar Starts                         */
+/* ------------------------------------------------------------- */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  background: #202020;
+  position: sticky;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.logo{
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 35%;
+}
+nav ul li a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+/* ------------------------------------------------------------- */
+/*                        Nav-bar Ends                           */
+/* ------------------------------------------------------------- */
+#header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/*                                             Home Page Area Ends                                                */
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------- */
+/*                  About Section Starts                         */
+/* ------------------------------------------------------------- */
+.about {
+  height: 100vh;
+  padding: 10px;
+  margin: 0;
+}
+.about-img {
+  margin: 40px 0;
+  height: 600px;
+  width: 370px;
+  border: 2px solid #202020;
+}
+.row .col-md-6 {
+  margin: 40px 0;
+}
+.abt-expl {
+  color: #202020;
+}
+/* ------------------------------------------------------------- */
+/*                  About Section Ends                           */
+/* ------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/*                Social Icons Section Starts                    */
+/* ------------------------------------------------------------- */
+.social-icons {
+  width: 80px;
+  transform: translateY(-70%);
+  position: sticky;
+  top: 50%;
+  z-index: 1;
+}
+
+.social-icons ul {
+  padding: 20px;
+}
+.social-icons ul li {
+  height: 40px;
+  width: 40px;
+  list-style-type: none;
+  padding-left: 12px;
+  padding-top: 6px;
+  margin-top: 20px;
+  color: #777;
+  font-size: 20px;
+  background: #dde1e7;
+  box-shadow: -6px -6px 10px #ffffff73, 6px 6px 10px rgba(94, 104, 121, 0.288);
+}
+
+.social-icons ul li:hover {
+  box-shadow: inset -6px -6px 10px #ffffff73, inset 6px 6px 10px rgba(94, 104, 121, 0.288);
+  transform: translateY(2px);
+  transition: 0.5s;
+}
+
+.social-icons ul li:hover i{
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.social-icons ul li:hover .fa-linkedin{
+  color: #0e76a8;
+}
+.social-icons ul li:hover .fa-github{
+  color: #333;
+}
+.social-icons ul li:hover .fa-instagram{
+  color: #bc2a8d;
+}
+.social-icons ul li:hover .fa-twitter{
+  color: #00acee;
+}
+/* ------------------------------------------------------------- */
+/*                Social Icons Section Ends                      */
+/* ------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/*                    Education Section Starts                   */
+/* ------------------------------------------------------------- */
+#education{
+  height: auto;
+  background-color: #dde1e7;
+  padding: 10px;
+}
+.edu-head, .langntool-head{
+  height: 40px;
+  width: 200px;
+  padding-top: 7px;
+  text-align: center;
+  margin: 0 auto;
+  color: #00e64d;
+  border-radius: 12px;
+  box-shadow: -6px -6px 12px #ffffff73, 6px 6px 10px rgba(94, 104, 121, 0.288);
+}
+
+.neumorphism {
+  margin: 10px;
+  height: 30vh;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: -6px -6px 12px #ffffff73, 6px 6px 10px rgba(94, 104, 121, 0.288);
+}
+
+.neumorphism-inset{
+  margin: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: #dde1e7;
+  box-shadow: inset -6px -6px 12px #ffffff73, inset 6px 6px 10px rgba(94, 104, 121, 0.288);
+}
+
+.neumorphism:hover{
+  box-shadow: inset -6px -6px 12px #ffffff73, inset 6px 6px 10px rgba(94, 104, 121, 0.288);
+}
+/* ------------------------------------------------------------- */
+/*                  Education Section Ends                       */
+/* ------------------------------------------------------------- */
+
+/* ------------------------------------------------------------- */
+/*                     Skills Section Starts                     */
+/* ------------------------------------------------------------- */
+.inline{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.box{
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  background-color: #dde1e7;
+}
+
+.inline .box img{
+  padding: 0;
+  height: 80px;
+  width: 80px;
+}
+/* ------------------------------------------------------------- */
+/*                     Skills Section Ends                       */
+/* ------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/*                     Contact Section Starts                    */
+/* ------------------------------------------------------------- */
+.contact {
+  padding-top: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+.contact .col-md-4 {
+  padding: 40px;
+}
+/* ------------------------------------------------------------- */
+/*                     Contact Section Ends                      */
+/* ------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/*                     Footer Section Starts                     */
+/* ------------------------------------------------------------- */
+footer {
+  background-color: #f0f0f0;
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+.copyright {
+  height: 50px;
+  padding-top: 30px;
+  text-align: right;
+  color: #fffff0;
+}
+
+.go-to-top a {
+  color: red;
+  background: #fff;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  box-shadow: 0px -2px 9.9px 0.1px rgba(186, 187, 188, 0.25);
+  font-size: 27px;
+}
+.go-to-top a:hover {
+  box-shadow: 0px -4px 9.9px 0.1px rgba(186, 187, 188, 0.25);
+}
+/* ------------------------------------------------------------- */
+/*                     Footer Section Ends                       */
+/* ------------------------------------------------------------- */
