@@ -14,19 +14,21 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 15vh;
-  background: #202020;
-  position: sticky;
+  height: 12vh;
+  position: fixed;
   margin: 0;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
+  transition: 0.5s;
+}
+.stick{
+  background: #19334d;
 }
 .logo{
-    color: aliceblue;
-    text-transform: uppercase;
-    letter-spacing: 7px;
+  color: aliceblue;
+  letter-spacing: 7px;
 }
 .nav-links{
     display: flex;
@@ -41,16 +43,41 @@ nav ul li a {
   text-decoration: none;
   letter-spacing: 3px;
 }
+
 /* ------------------------------------------------------------- */
 /*                        Nav-bar Ends                           */
 /* ------------------------------------------------------------- */
 #header {
+  position: relative;
+  padding: 100px;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(images/background.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header h2{
+  font-size: 2.4em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+#header h2 span{
+  font-size: 1.2em;
+  font-weight: 700;
+}
+#header h3{
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 500;
+}
+.name-box{
+  position: relative;
+  top: -5%;
 }
 /* -------------------------------------------------------------------------------------------------------------- */
 /*                                             Home Page Area Ends                                                */
@@ -59,22 +86,26 @@ nav ul li a {
 /* ------------------------------------------------------------- */
 /*                  About Section Starts                         */
 /* ------------------------------------------------------------- */
-.about {
-  height: 100vh;
-  padding: 10px;
-  margin: 0;
+.abt-head{
+  width: 100%;
+  text-align: center;
 }
-.about-img {
-  margin: 40px 0;
-  height: 600px;
-  width: 370px;
-  border: 2px solid #202020;
+.abt-head h2{
+  font-weight: 600;
+  font-size: 30px;
 }
-.row .col-md-6 {
-  margin: 40px 0;
+.abt-text{
+  padding: 40px;
 }
-.abt-expl {
-  color: #202020;
+.abt-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.abt-text h4{
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 /* ------------------------------------------------------------- */
 /*                  About Section Ends                           */
@@ -84,7 +115,7 @@ nav ul li a {
 /* ------------------------------------------------------------- */
 /*                Social Icons Section Starts                    */
 /* ------------------------------------------------------------- */
-.social-icons {
+/* .social-icons {
   width: 80px;
   transform: translateY(-70%);
   position: sticky;
@@ -130,7 +161,7 @@ nav ul li a {
 }
 .social-icons ul li:hover .fa-twitter{
   color: #00acee;
-}
+} */
 /* ------------------------------------------------------------- */
 /*                Social Icons Section Ends                      */
 /* ------------------------------------------------------------- */
@@ -262,3 +293,73 @@ footer {
 /* ------------------------------------------------------------- */
 /*                     Footer Section Ends                       */
 /* ------------------------------------------------------------- */
+
+
+/*----------------------------------------------------------------*/
+/*                        Responsive Starts                       */
+/*----------------------------------------------------------------*/
+@media (max-width: 1100px){
+    .nav-links{
+        width: 50%;
+        transition: .5s;
+    }
+@media (max-width: 1024px){
+    .nav-links{
+        width: 55%;
+        transition: .5s;
+    }
+@media (max-width: 920px){
+    .nav-links{
+        width: 60%;
+        transition: .5s;
+    }
+    @media screen and (max-width: 720px){
+      nav{
+        justify-content: space-between;
+        padding: 0 40px;
+      }
+      .nav-links{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background-color:rgb(0, 0, 0, 0.8);
+        top: 12vh;
+        transition: 0.5s;
+      }
+      .nav-links li{
+        margin: 30px;
+      }
+      .logo{
+        align-content: left;
+      }
+      .toggle{
+        height: 40px;
+        width: 40px;
+        background: url(./images/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        cursor: pointer;
+      }
+      .toggle.active{
+        background: url(./images/close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+        cursor: pointer;
+      }
+      .nav-links.active{
+        right: 0;
+      }
+
+}
+
+    }
+/*----------------------------------------------------------------*/
+/*                        Responsive Ends                         */
+/*----------------------------------------------------------------*/

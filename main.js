@@ -1,4 +1,16 @@
 $(document).ready(function() {
+    window.addEventListener('scroll', function(){
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('stick', window.scrollY > 0);
+    });
+
+    //---------------------Hamburger------------------------
+    const hamburger = document.querySelector('.toggle');
+    const navlinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', function(){
+        hamburger.classList.toggle('active');
+        navlinks.classList.toggle('active');
+    });
     //--------------------------------------------Nav Bar Starts--------------------------------------------
     // const navslide = () => {
     //     const hamburger = document.querySelector('.hamburger');
