@@ -1,10 +1,31 @@
-
+    //-------------------Nav Bar starts------------------------------
     window.addEventListener('scroll', function(){
         var nav = document.querySelector('nav');
-        nav.classList.toggle('stick', window.scrollY > 0);
+        nav.classList.toggle('abtNav', window.scrollY > 640);
+    });
+    window.addEventListener('scroll', function(){
+        var nav = document.querySelector('nav');
+        if ($(window).width() >= 1024) {
+            nav.classList.toggle('eduNav', window.scrollY > 1270);
+        } else {
+            nav.classList.toggle('eduNav', window.scrollY > 1570);
+        }
     });
 
-    //---------------------Hamburger------------------------
+    // const navColor = document.querySelector('nav ul li a');
+    // if (window.scrollY >= 640) {
+    //     navColor.setAttribute("color", "#2BAE66FF");
+    //     } else if (($(window).width() >= 600) && (window.scrollY > 1270)) {
+    //         navColor.setAttribute("color", "#E94B3CFF");
+    //     } else if (($(window).width() >= 1024) && (window.scrollY > 1270)) {
+    //         navColor.setAttribute("color", "#E94B3CFF");
+    //     } else {
+    //         navColor.setAttribute("color", "white");
+    //     }
+    //-------------------Nav Bar Ends--------------------------------
+
+
+    //-----------------------Hamburger Starts------------------------
     const hamburger = document.querySelector('.toggle');
     const navlinks = document.querySelector('.nav-links');
     hamburger.addEventListener('click', function(){
@@ -42,7 +63,4 @@
             }
         });
     });
-    const educolor = document.querySelector('.education');
-    educolor.addEventListener('click', function () {
-        document.getElementsByClassName('stick').setAttribute('background', 'green');
-    });
+    //-----------------------Hamburger Ends------------------------

@@ -23,8 +23,11 @@ nav {
   z-index: 1;
   transition: 0.5s;
 }
-.stick{
-  background: #19334d;
+.abtNav{
+  background: #101820FF;
+}
+.eduNav{
+  background: #4B878BFF;
 }
 .logo{
   color: aliceblue;
@@ -43,6 +46,7 @@ nav ul li a {
   text-decoration: none;
   letter-spacing: 3px;
 }
+
 nav ul li a:hover{
   color: #bc2a8d;
   text-decoration: none;
@@ -105,18 +109,46 @@ ul li a:hover span{
 /* ------------------------------------------------------------- */
 .about{
   margin-bottom: -110px;
-  padding-top: 12vh;
+  padding: 12vh 20px;
+  background-color: #fff;
 }
 .abt-head{
-  width: 100%;
-  text-align: center;
+  width:250px;
+  position: relative;
+  left: 35%;
 }
 .abt-head h2{
   font-weight: 600;
   font-size: 30px;
+  letter-spacing: 0;
+  color: #101820FF;
+  line-height: 30px;
+  margin-bottom: 50px;
+  padding-bottom: 16px;
+  position: relative;
+}
+.abt-head h2:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #101820FF;
+}
+.abt-head h2:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 200px;
+  background-color: #101820FF;
 }
 .abt-text{
   padding: 40px;
+  color: #2BAE66FF;
+  background-color: #101820FF;
 }
 .abt-content{
   display: flex;
@@ -155,7 +187,7 @@ ul li a:hover span{
   margin-top: 20px;
   color: #777;
   font-size: 20px;
-  background: #dde1e7;
+  background: #fff;
   box-shadow: -6px -6px 10px #ffffff73, 6px 6px 10px rgba(94, 104, 121, 0.288); */
 } 
 .social-icons ul li:hover {
@@ -192,7 +224,6 @@ ul li a:hover span{
 #education{
   margin-top: -150px;
   height: auto;
-  /* background-color: #dde1e7; */
   background-color: #E94B3CFF;
   padding: 20px;
   padding-top: 12vh;
@@ -275,6 +306,12 @@ ul li a:hover span{
 }
 .contact .col-md-4 {
   padding: 40px;
+}
+
+.text-neu{
+  color: white;
+  padding: 40px;
+  filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2)) drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
 }
 /* ------------------------------------------------------------- */
 /*                     Contact Section Ends                      */
@@ -405,6 +442,12 @@ footer {
 }
 #header h2{
   font-size: 1.8em;
+}
+@media screen and (max-width: 620px) {
+  .social-icons ul {
+  padding-left: 5px;
+}
+}
 /*----------------------------------------------------------------*/
 /*                        Responsive Ends                         */
 /*----------------------------------------------------------------*/
