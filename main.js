@@ -1,7 +1,7 @@
     //-------------------Nav Bar starts------------------------------
     window.addEventListener('scroll', function(){
         var nav = document.querySelector('nav');
-        nav.classList.toggle('abtNav', window.scrollY > 640);
+        nav.classList.toggle('abtNav', window.scrollY > 620);
     });
     window.addEventListener('scroll', function(){
         var nav = document.querySelector('nav');
