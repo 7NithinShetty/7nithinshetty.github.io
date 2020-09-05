@@ -167,6 +167,7 @@ ul li a:hover span{
 /* ------------------------------------------------------------- */
 /*                Social Icons Section Starts                    */
 /* ------------------------------------------------------------- */
+
 .social-icons {
   width: 80px;
   transform: translateY(-100%);
@@ -187,7 +188,7 @@ ul li a:hover span{
   color: #777;
   font-size: 20px;
   background: #fff;
-  box-shadow: -6px -6px 10px #ffffff73, 6px 6px 10px rgba(94, 104, 121, 0.288); */
+  box-shadow: -6px -6px 10px #ffffff73, 6px 6px 10px rgba(94, 104, 121, 0.288);
 } 
 .social-icons ul li:hover {
   box-shadow: inset -6px -6px 10px #ffffff73, inset 6px 6px 10px rgba(94, 104, 121, 0.288);
@@ -456,7 +457,7 @@ footer {
   .abt-content{
     flex-flow: column;
   }
-@keyframes navlinkFade{
+  @keyframes navlinkFade{
     from{
         opacity: 0;
         transform: translateX(200px);
@@ -465,20 +466,22 @@ footer {
         opacity: 1;
         transform: translateX(0px);
     }
-}
-#header{
+  }
+  #header{
   padding: 20px;
-}
-#header h2{
+  }
+  #header h2{
   font-size: 1.8em;
+  }
 }
-@media screen and (max-width: 620px) {
-  .social-icons ul {
-  padding-left: 5px;
-}
-.neumorphism{
-  height: 20vh;
-}
-/*----------------------------------------------------------------*/
-/*                        Responsive Ends                         */
-/*----------------------------------------------------------------*/
+@media screen and (max-width: 620px){
+    .social-icons ul {
+      padding-left: 5px;
+    }
+    .neumorphism{
+      height: 20vh;
+    }
+  }    
+  /*----------------------------------------------------------------*/
+  /*                        Responsive Ends                         */
+  /*----------------------------------------------------------------*/
