@@ -98,6 +98,24 @@ ul li a:hover span{
 .insidespan span:hover{
   transform: rotateY(360deg);
 }
+.name-box h3{
+  position: absolute;
+  height: 1.2em;
+  line-height: 1.2em;
+  overflow: hidden;
+}
+.name-box h3 span{
+  animation: animate 5s ease infinite;
+  position: relative;
+}
+@keyframes animate{
+  0%{top: 0;}
+  25%{top: -20px;}
+  50%{top: -40px;}
+  60%{top: -40px;}
+  75%{top: -20px;}
+  100%{top: 0;}
+}
 /* -------------------------------------------------------------------------------------------------------------- */
 /*                                             Home Page Area Ends                                                */
 /* -------------------------------------------------------------------------------------------------------------- */
@@ -262,6 +280,13 @@ ul li a:hover span{
 .neumorphism:hover{
   box-shadow: inset -6px -6px 12px #ffffff73, inset 6px 6px 10px rgba(94, 104, 121, 0.288);
 }
+.neumorphism:hover{
+  font-size: 20px;
+  filter: drop-shadow(-6px -6px 6px #ffffff73) drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.4));
+} 
+.neumorphism h5{
+  font-weight:700 ;
+}
 /* ------------------------------------------------------------- */
 /*                  Education Section Ends                       */
 /* ------------------------------------------------------------- */
@@ -286,6 +311,19 @@ ul li a:hover span{
   padding: 0;
   height: 80px;
   width: 80px;
+}
+.neumorphismForSkil{
+  filter: drop-shadow(6px 6px 15px rgba(0, 0, 0, 1));
+}
+.neumorphismForSkil:hover{
+  filter: drop-shadow(0 0 0 rgba(0, 0, 0, 1));
+  transition: 0.2s;
+}
+.inline .box img:hover{
+  padding: 0;
+  height: 70px;
+  width: 70px;
+  transition: 0.2s;
 }
 /* ------------------------------------------------------------- */
 /*                     Skills Section Ends                       */
@@ -481,6 +519,10 @@ footer {
     .neumorphism{
       height: 20vh;
     }
+    .social-icons {
+      transform: translateY(-200%);
+      top: 75%;
+    } 
   }    
   /*----------------------------------------------------------------*/
   /*                        Responsive Ends                         */

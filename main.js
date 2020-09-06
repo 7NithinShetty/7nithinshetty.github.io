@@ -1,14 +1,18 @@
     //-------------------Nav Bar starts------------------------------
     window.addEventListener('scroll', function(){
         var nav = document.querySelector('nav');
-        nav.classList.toggle('abtNav', window.scrollY > 620);
+        if ($(window).width() >= 1024){
+            nav.classList.toggle('abtNav', window.scrollY > 660);
+        } else{
+            nav.classList.toggle('abtNav', window.scrollY > 780);
+        }
     });
     window.addEventListener('scroll', function(){
         var nav = document.querySelector('nav');
         if ($(window).width() >= 1024) {
             nav.classList.toggle('eduNav', window.scrollY > 1270);
         } else {
-            nav.classList.toggle('eduNav', window.scrollY > 1570);
+            nav.classList.toggle('eduNav', window.scrollY > 1790);
         }
     });
 
