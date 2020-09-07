@@ -340,6 +340,7 @@ ul li a:hover span{
   background-size: cover;
   background-attachment: fixed;
   color: white;
+  text-shadow: 3px 3px 10px #00b3ff, -3px -3px 10px #00b3ff;
 }
 .contact .col-md-4 {
   padding: 40px;
@@ -350,6 +351,25 @@ ul li a:hover span{
   width: 220px;
   position: relative;
   left: calc(50% - 110px);
+  animation: ContLight 6s ease infinite;
+}
+@keyframes ContLight{
+  0%, 3%{
+    color: white;
+    filter: blur(0.5px);
+  }
+  4%, 5%{
+    color: #111;
+    filter: blur(0.5px);
+  }
+  6%, 12%{
+    color: white;
+    filter: blur(0.5px);
+  }
+  13%, 100%{
+    color: #111;
+    filter: blur(0.5px);
+  }
 }
 .ContHead h2{
   font-weight: 600;
@@ -367,6 +387,7 @@ ul li a:hover span{
   height: 5px;
   width: 60px;
   background-color: #fff;
+  box-shadow: 3px 3px 10px #00b3ff, -3px -3px 10px #00b3ff;
 }
 .ContHead h2:after{
   content: '';
@@ -376,6 +397,7 @@ ul li a:hover span{
   height: 1px;
   width: 210px;
   background-color: #fff;
+  box-shadow: 3px 3px 10px #00b3ff, -3px -3px 10px #00b3ff;
 }
 .contact .col-md-4{
   justify-content: space-around;
