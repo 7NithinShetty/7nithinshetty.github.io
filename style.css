@@ -29,9 +29,13 @@ nav {
 .eduNav{
   background: #4B878BFF;
 }
-.logo{
+.logo h4{
+  height: 8vh;
+  font-size: 45px;
   color: aliceblue;
-  letter-spacing: 7px;
+  letter-spacing: -16px;
+  font-weight: 400;
+  position: relative;
 }
 .nav-links{
     display: flex;
@@ -45,6 +49,9 @@ nav ul li a {
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 3px;
+}
+nav ul li a span{
+  font-family: 'Russo One', sans-serif;
 }
 
 nav ul li a:hover{
@@ -94,9 +101,19 @@ ul li a:hover span{
   color: #e91e1e;
   transition: 3s;
   font-weight: 300;
+  animation: spin 4s ease infinite;
 }
-.insidespan span:hover{
-  transform: rotateY(360deg);
+@keyframes spin{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+.insidespan, .insidespan span, .name-box h3 span{
+  /* text-shadow: 1.5px 1.5px 5px #00b3ff, -1.5px -1.5px 5px #00b3ff; */
+  font-family: 'Russo One', sans-serif;
 }
 .name-box h3{
   position: absolute;
@@ -105,16 +122,22 @@ ul li a:hover span{
   overflow: hidden;
 }
 .name-box h3 span{
-  animation: animate 5s ease infinite;
+  animation: animate 5s ease-in-out infinite;
   position: relative;
 }
 @keyframes animate{
-  0%{top: 0;}
-  25%{top: -20px;}
-  50%{top: -40px;}
-  60%{top: -40px;}
-  75%{top: -20px;}
-  100%{top: 0;}
+  0%{
+    top: 0;
+  }
+  50%{
+    top: 0;
+  }
+  51%{
+    top: -25px;
+  }
+  100%{
+    top: -25px;
+  }
 }
 /* -------------------------------------------------------------------------------------------------------------- */
 /*                                             Home Page Area Ends                                                */
@@ -124,7 +147,7 @@ ul li a:hover span{
 /*                  About Section Starts                         */
 /* ------------------------------------------------------------- */
 .about{
-  margin-bottom: -110px;
+  /* margin-bottom: -110px; */
   padding: 12vh 20px;
   background-color: #fff;
 }
@@ -188,7 +211,7 @@ ul li a:hover span{
 
 .social-icons {
   width: 80px;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   position: sticky;
   top: 50%;
   z-index: 1;
@@ -351,7 +374,7 @@ ul li a:hover span{
   width: 220px;
   position: relative;
   left: calc(50% - 110px);
-  animation: ContLight 6s ease infinite;
+  animation: ContLight 6s linear infinite;
 }
 @keyframes ContLight{
   0%, 3%{
