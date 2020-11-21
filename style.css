@@ -368,6 +368,9 @@ ul li a:hover span{
 .contact .col-md-4 {
   padding: 40px;
 }
+.contact .col-md-4 a{
+  color: white;
+}
 
 .ContHead{
   box-sizing: border-box;
